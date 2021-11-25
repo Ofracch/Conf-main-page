@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="style.css">
+    <title>NUCBA CONF</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <header class="principal">
+                <h1>NUCBA-CONF</h1>
+                <p>Estamos de cheto</p>
+                <p>Cheto mal</p>
+            </header>
+            <div class="entrada entrada1">
+                <p>ENTRADA</p>
+                <p class="price">$500</p>
+                <p>VIP + FOTO CON FACU</p>
+            </div>
+            <div class="entrada entrada2">
+                <p>ENTRADA</p>
+                <p class="price">$200</p>
+                <p>AL FONDO Y 🍺🍺 CON LUCHO</p>
+            </div>
+        </div>
+        <nav class="menu">
+            <button aria-expanded="false" aria-controls="menu-list">
+                <span class="open">&#9776;</span>
+                <span class="close">&#9747;</span>
+                Menu
+            </button>
+            <ul id="menu-list">
+            <li><a href="">About</a></li>
+            <li><a href="">Speakers</a></li>
+            <li><a href="">Precios</a></li>
+            <li><a href="">Code</a></li>
+            <li><a href="">Vip</a></li>
+            </ul>
+        </nav>
+        <section class="features">
+            <div class="feature">
+                <span class="icon">🍔</span>
+                <h3>COMIDA</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, cum.
+                    Assumenda.
+                </p>
+            </div>
+            <div class="feature">
+                <span class="icon">🍺</span>
+                <h3>BIRRA</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, cum.
+                    Assumenda.
+                </p>
+            </div>
+            <div class="feature">
+                <span class="icon">💻</span>
+                <h3>CODE</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, cum.
+                    Assumenda.
+                </p>
+            </div>
+            <div class="feature">
+                <span class="icon">🎼</span>
+                <h3>MUSIC</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, cum.
+                    Assumenda.
+                </p>
+            </div>
+        </section>
+        <section class="about">
+            <video src="XD.mp4" autoplay loop muted width="500" height="300"></video>
+            <div class="about__details">
+                <h2>A CODEAR!</h2>
+                <p>Slim Profile, easy to hold and loaded with cheese</p>
+                <p>This is the one you have been waiting for</p>
+                <button>Inflo please &#10142</button>
+            </div>
+        </section>
+        <section class="gallery">
+            <h2>
+                Instant Grams
+            </h2>
+            <img src="https://source.unsplash.com/random/201x201" alt="">
+            <img src="https://source.unsplash.com/random/202x202" alt="">
+            <img src="https://source.unsplash.com/random/203x203" alt="">
+            <img src="https://source.unsplash.com/random/204x204" alt="">
+            <img src="https://source.unsplash.com/random/205x205" alt="">
+            <img src="https://source.unsplash.com/random/206x206" alt="">
+            <img src="https://source.unsplash.com/random/207x207" alt="">
+            <img src="https://source.unsplash.com/random/208x208" alt="">
+            <img src="https://source.unsplash.com/random/209x209" alt="">
+            <img src="https://source.unsplash.com/random/210x210" alt="">
+            <img src="https://source.unsplash.com/random/211x211" alt="">
+            <img src="https://source.unsplash.com/random/212x212" alt="">
+            <img src="https://source.unsplash.com/random/213x213" alt="">
+            <img src="https://source.unsplash.com/random/214x214" alt="">
+            <img src="https://source.unsplash.com/random/215x215" alt="">
+            <img src="https://source.unsplash.com/random/216x216" alt="">
+        </section>
+    </div>
+    <script>
+       const navButton = document.querySelector('button[aria-expanded]')
+       ;
+       function toggleNav({ target })  {
+           const expandir =
+            target.getAttribute('aria-expanded') === "true" || false;
+           navButton.setAttribute( 'aria-expanded', !expandir);
+       }
+    navButton.addEventListener('click', toggleNav)
+       console.log(navButton);
+    </script>
+</body>
+</html>
