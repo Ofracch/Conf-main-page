@@ -212,17 +212,29 @@ img {
         display: none;
     }
 }
-
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
+    .features {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }    
+}
+   
+@media (max-width: 750px) {
     .top {
     grid-template-areas: 
     'principal principal'
     'entrada1 entrada2' ;}
-}
-
 .about {
     grid-template-columns:  1fr;
 }
+.features {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+}
+
 
 @media (max-width: 500px) {
 .top {
@@ -230,4 +242,5 @@ img {
     'principal'
     'entrada1'
     'entrada2' ;}
+
 }
