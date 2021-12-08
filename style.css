@@ -40,7 +40,7 @@ img {
 }
 
 .principal > * {
-    background: var(--color-cheto);
+    /*background: var(--color-cheto);*/
     padding: 5px;
 }
 
@@ -242,5 +242,4 @@ img {
     'principal'
     'entrada1'
     'entrada2' ;}
-
 }
